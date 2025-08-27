@@ -3,63 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ThorpeTech</title>
+  <title>Orbit by ThorpeTech</title>
   <style>
-    /* Import Circular font via fallback (if you don’t have a web licence, you can sub in Inter or Nunito as a look-alike) */
     @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
-    
     body {
       font-family: 'Circular', 'Nunito', sans-serif;
-      text-align: center;
-      background: #f9fafc;   /* light background */
-      color: #1e2a44;        /* dark text */
+      background: #ffffff;
+      color: #1e2a44;
       margin: 0;
-      padding: 5rem 1rem;
+      padding: 0;
+      text-align: center;
+      line-height: 1.6;
     }
-
+    header {
+      padding: 2rem 1rem 1rem;
+    }
+    header img {
+      max-width: 160px;
+    }
     h1 {
-      color: #002a80;        /* dark blue headline */
       font-size: 2.5rem;
-      margin-bottom: 1rem;
+      margin: 1rem 0 0.5rem;
+      color: #002a80;
     }
-
-    p {
+    h2 {
+      color: #002a80;
+      margin-top: 2rem;
+      font-size: 1.8rem;
+    }
+    p.lead {
       font-size: 1.2rem;
       margin-bottom: 2rem;
+      color: #333;
     }
-
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .feature {
+      background: #f9fafc;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .feature h3 {
+      margin-top: 0;
+      color: #002a80;
+    }
+    .buttons {
+      margin: 2rem 0;
+    }
     .button {
       display: inline-block;
       margin: 0.5rem;
       padding: 1rem 2rem;
       border-radius: 999px;
-      background: #002a80;   /* brand blue */
+      background: #002a80;
       color: #fff;
       text-decoration: none;
       font-weight: bold;
       transition: background 0.3s;
     }
-
     .button:hover {
-      background: #001a4d;   /* darker hover blue */
+      background: #001a4d;
     }
-
     footer {
-      margin-top: 4rem;
+      margin-top: 3rem;
+      padding: 2rem;
       font-size: 0.9rem;
       color: #666;
+      background: #f2f2f2;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to ThorpeTech</h1>
-  <p>Orbit is coming soon 🚀</p>
+  <header>
+    <img src="logo.svg" alt="Orbit Logo">
+    <h1>Orbit by ThorpeTech</h1>
+    <p class="lead">The smarter way to connect people, events, and communities.</p>
+  </header>
 
-  <a class="button" href="https://play.google.com/store/apps/details?id=...">Google Play</a>
-  <a class="button" href="https://apps.apple.com/...">App Store</a>
+  <div class="buttons">
+    <a class="button" href="https://play.google.com/store/apps/details?id=...">Google Play</a>
+    <a class="button" href="https://apps.apple.com/...">App Store</a>
+  </div>
+
+  <section>
+    <h2>Why Orbit?</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>🌍 Local Discovery</h3>
+        <p>Find nearby events, vendors, and communities instantly, powered by Orbit’s real-time location engine.</p>
+      </div>
+      <div class="feature">
+        <h3>💬 Seamless Chat</h3>
+        <p>Jump into event chats or start direct conversations without sharing personal details.</p>
+      </div>
+      <div class="feature">
+        <h3>📱 QR Ready</h3>
+        <p>Use custom Orbit QR codes for instant sharing — perfect for events, promotions, or meetups.</p>
+      </div>
+      <div class="feature">
+        <h3>🔒 Privacy First</h3>
+        <p>Connect safely. Orbit never exposes your personal data and gives you full control over who can reach you.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Coming Soon</h2>
+    <p>Orbit is launching soon on iOS and Android. Be one of the first to join the new way of connecting.</p>
+  </section>
 
   <footer>
-    &copy; 2025 ThorpeTech · All rights reserved
+    &copy; 2025 ThorpeTech · Orbit is a product of ThorpeTech Ltd.
   </footer>
 </body>
 </html>
